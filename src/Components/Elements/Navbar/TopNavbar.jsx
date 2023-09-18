@@ -2,18 +2,18 @@ import { EmailIcon, FacebookIcon, InstagramIcon, PhoneIcon, TwitterIcon, Youtube
 
 export default function TopNavbar(){
     return(
-        <div className="h-[58px] bg-[#252B42] text-white flex justify-center items-center gap-[30px]">
+        <div className="h-[58px] bg-[#252B42] text-white hidden md:flex justify-center items-center gap-[30px]">
                 {/* Left */}
                 <div className="flex gap-[10px]">
                     <div className="flex items-center gap-[5px]">
                         <span>
-                            <img src={PhoneIcon} alt="phone icon navbar" />
+                            <img src={PhoneIcon} alt="phone icon navbar" className="w-[16px] h-[16px]" />
                         </span>
                         <span>(225) 555-0118</span>
                     </div>
                     <div className="flex items-center gap-[5px]">
                         <span>
-                            <img src={EmailIcon} alt="email icon navbar" />
+                            <img src={EmailIcon} alt="email icon navbar" className="w-[16px] h-[12px]" />
                         </span>
                         <span>michelle.rivera@example.com</span>
                      </div>
