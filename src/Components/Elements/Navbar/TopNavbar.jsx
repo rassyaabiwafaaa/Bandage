@@ -9,13 +9,13 @@ export default function TopNavbar(){
                         <span>
                             <img src={PhoneIcon} alt="phone icon navbar" className="w-[16px] h-[16px]" />
                         </span>
-                        <span>(225) 555-0118</span>
+                        <span className="hover:underline"><a href="#">(225) 555-0118</a></span>
                     </div>
                     <div className="flex items-center gap-[5px]">
                         <span>
                             <img src={EmailIcon} alt="email icon navbar" className="w-[16px] h-[12px]" />
                         </span>
-                        <span>michelle.rivera@example.com</span>
+                        <span className="hover:underline"><a href="#">michelle.rivera@example.com</a></span>
                      </div>
                 </div>
                 
@@ -26,12 +26,20 @@ export default function TopNavbar(){
                 {/* Right */}
                 <div className="flex font-bold gap-[10px]">
                     <span>Follow Us : </span>
-                    <div className="flex items-center gap-[10px]">
-                        <img src={InstagramIcon} alt="Instagram icon" className="w-[16px] h-[16px]" />
-                        <img src={YoutubeIcon} alt="Youtube Icon" className="w-[16px] h-[11.24px]"/>
-                        <img src={FacebookIcon} alt="Facebook Icon" className="w-[16px] h-[16px]"/>
-                        <img src={TwitterIcon} alt="Twitter Icon" className="w-[16px] h-[13px]"/>
-                    </div>
+                        <ul className="flex items-center gap-[10px]">
+                            <li>
+                                <a href="#"><img src={InstagramIcon} alt="Instagram icon" className="w-[16px] h-[16px]" /></a>
+                            </li>
+                            <li>
+                               <a href="#"> <img src={YoutubeIcon} alt="Youtube Icon" className="w-[16px] h-[11.24px]"/></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src={FacebookIcon} alt="Facebook Icon" className="w-[16px] h-[16px]"/></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src={TwitterIcon} alt="Twitter Icon" className="w-[16px] h-[13px]"/></a>
+                            </li>
+                        </ul>
                 </div>
         </div>
     )
