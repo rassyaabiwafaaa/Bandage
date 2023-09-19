@@ -10,12 +10,12 @@ export default function BottomNavbar(){
             {/* Mid */}
             <div className="mr-[124.5px] font-bold text-[14px] text-[#737373]">
                 <ul className="flex gap-[15px]">
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>About</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                    <li>Pages</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Pages</a></li>
                 </ul>
             </div>
             {/* Right */}
