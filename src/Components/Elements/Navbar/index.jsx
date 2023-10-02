@@ -6,12 +6,12 @@ export default function Navbar(){
     return(
         <>
         {/* Desktop Navbar */}
-        <div className="md:block hidden w-full h-[136px]">
+        <div className="lg:block hidden w-full h-[136px]">
             <TopNavbar/>
             <BottomNavbar/>
         </div>
         {/* Mobile Navbar */}
-        <div className="block md:hidden">
+        <div className="block lg:hidden w-full">
             <MobileNavbar/>
         </div>
         </>
