@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { CartIcon, LoginIcon, LoveIcon, SearchIcon } from "../../../assets/icons";
 
 export default function BottomNavbar(){
+    const [isLogin, setIsLogin] = useState(false)
     return(
         <div className="h-[78px] bg-white flex items-center justify-center">
             {/* Left */}
@@ -26,7 +28,7 @@ export default function BottomNavbar(){
                     <span>Login / Register</span>
                 </div>
                 {/* Icon */}
-                <div className="flex items-center gap-[15px]">
+                <div className={`${isLogin ? 'flex items-center' : 'hidden'}  gap-[15px]`}>
                     <span className="flex items-center">
                         <img src={SearchIcon} alt="search icon" className="w-[16px] h-[16px]"/>
                     </span>

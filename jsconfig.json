@@ -1,0 +1,14 @@
+// jsconfig.json or tsconfig.json
+{
+    "compilerOptions": {
+      "baseUrl": "src",
+      "paths": {
+        "@components/*": ["components/*"],
+        "@styles/*": ["styles/*"],
+        "@utils/*": ["utils/*"]
+        // Add more aliases as needed
+      }
+    },
+    "include": ["src/**/*"]
+  }
+  

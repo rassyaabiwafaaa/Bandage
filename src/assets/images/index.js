@@ -1,0 +1,1 @@
+export {default as HeroImage1} from './hero-image-1.png'
